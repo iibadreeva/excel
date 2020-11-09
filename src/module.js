@@ -5,4 +5,5 @@ async function start() {
   return await Promise.resolve('asinc woking')
 }
 
-start().then(data => console.log(data));
+start().then(data => console.log(data))
+

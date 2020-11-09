@@ -10,7 +10,15 @@
     "arrow-parens": "off",
     "comma-dangle": "off",
     "require-jsdoc": "off",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "quotes": ["error", "single"],
+    "eol-last": "off",
+    "jsx-quotes": [
+      "off",
+      "prefer-double"
+    ],
+//    "no-console": "error",
+    "no-debugger": "error"
   },
   "extends": ["eslint:recommended", "google"]
 }

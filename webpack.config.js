@@ -11,11 +11,16 @@ const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
 
 const jsLoaders = () => {
   const loaders = [
-    'babel-loader'
+    {
+      loader: 'babel-loader',
+      options: {
+        plugins: ['@babel/plugin-proposal-class-properties']
+      }
+    }
   ]
 
   if (isDev) {
-    // loaders.push('eslint-loader')
+    loaders.push('eslint-loader')
   }
 
   return loaders

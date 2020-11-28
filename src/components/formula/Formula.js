@@ -24,6 +24,6 @@ export class Formula extends ExcelComponent {
   }
 
   onClick(event) {
-    console.log('formula on onClick', event)
+    console.log('formula on onClick', event.target)
   }
 }
